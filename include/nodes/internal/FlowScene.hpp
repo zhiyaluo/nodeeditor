@@ -80,11 +80,11 @@ public:
   
 public:
 
-  std::unordered_map<QUuid, std::unique_ptr<Node> > const &nodes() const;
+  std::unordered_map<QUuid, std::unique_ptr<Node> > const & nodes() const;
 
   std::unordered_map<QUuid, std::shared_ptr<Connection> > const &connections() const;
 
-  std::vector<Node*>selectedNodes() const;
+  std::vector<Node*> selectedNodes() const;
 
 public:
 
@@ -144,7 +144,7 @@ private:
 private Q_SLOTS:
 
   void setupConnectionSignals(Connection const& c);
-  
+
   void sendConnectionCreatedToNodes(Connection const& c);
   void sendConnectionDeletedToNodes(Connection const& c);
 

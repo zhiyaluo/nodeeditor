@@ -210,8 +210,8 @@ mousePressEvent(QGraphicsSceneMouseEvent * event)
 
     // TODO do not pass sceneTransform
     int const portIndex = nodeGeometry.checkHitScenePoint(portToCheck,
-                                                    event->scenePos(),
-                                                    sceneTransform());
+                                                          event->scenePos(),
+                                                          sceneTransform());
 
     if (portIndex != INVALID)
     {
